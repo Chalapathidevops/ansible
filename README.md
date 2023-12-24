@@ -20,6 +20,10 @@ Step-2: I just copied the public ip of ansible server to the authorized_keys
   * Now, try to connect to node server using ssh <privateID>
 
   ***DONE!!***
-  * Create inventory file in ansible server and add private ips of node servers
+  * Create inventory file **inventory** in ansible server and add private ips of node servers
+   ```
+    root@ip-172-31-11-90:~/ansible# cat inventory
+    172.00.00.100
+  ```
   * Try to execute ansible command
   `ansible -i inventory all -m "shell" -a "touch test1"` and see the file is created in node server.
