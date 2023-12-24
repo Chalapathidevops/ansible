@@ -27,3 +27,7 @@ Step-2: I just copied the public ip of ansible server to the authorized_keys
   ```
   * Try to execute ansible command
   `ansible -i inventory all -m "shell" -a "touch test1"` and see the file is created in node server.
+<br><br>
+
+**Ref https://github.com/ansible/ansible-examples/tree/master** <br>
+**Ref https://github.com/ansible/ansible-examples**
